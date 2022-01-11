@@ -1,7 +1,7 @@
 let user = {};
-Object.defineProperty(user, "age", {
+Object.defineProperty(user, "age", {    // get and set methods are called when a value is called or set. get 과 set 메서드는 객체의 멤버가 호출되거나 대입될 때 불러와진다.
     get: function() {
-        return this._age;
+        return this._age;       // _ means this field is private. _는 해당 필드가 비공개임을 나타냄 JS에는 따로 private키워드가 없음.
     },
     set: function(age) {
         if (age < 0) {
