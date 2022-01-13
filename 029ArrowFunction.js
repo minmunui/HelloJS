@@ -24,7 +24,3 @@ console.log(sum(1, 2, 3));
 setTimeout(() => {
     console.log('Arrow Fuction!');
 }, 10);
-
-hello(() => {console.log("hi")});
-
-hello();

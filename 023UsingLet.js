@@ -13,5 +13,5 @@ console.log(blockScopeValue);
 
 let value = "outside";
 if ( true ) {
-    let value = 'Inside' // if value is not declared, "outside" will be assigned.
+    let value = 'Inside' // if value is not declared, "outside" will be called. 내부에서 let을 이용해서 선언하지 않는다면 외부의 변수가 호출된다.
 }

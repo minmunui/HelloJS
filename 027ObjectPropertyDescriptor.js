@@ -25,7 +25,7 @@ Object.defineProperty(user3, "toString", {
     enumerable: false
 });
 for (let key in user3) {
-    console.log("enumberable" + key);
+    console.log(key); // toString is not iterable only name will be printed toString은 enumerable이 false 이므로 순회되지 않는다. 오직 name만이 출력된다.
 }
 
 let user4 = {};
@@ -35,6 +35,6 @@ Object.defineProperty(user4, "name", {
 });
 delete user4.name;
 console.log(user4);
-Object.defineProperty(user4, "name", {
+Object.defineProperty(user4, "name", {  // configurable set to false, so this code generate error. configurable이 false이므로 수정이 불가능.
     writable: true
 });

@@ -21,7 +21,7 @@ var [a=10, f=9] = [1];              // first element of arr is assigned to a. th
 console.log(`1) a >>> ${a}`);       
 console.log(`1) f >>> ${f}`);
 
-[a, f] = [f, a];                    // 
+[a, f] = [f, a];                    
 console.log(`2) a >>> ${a}`);
 console.log(`2) f >>> ${f}`);
 
